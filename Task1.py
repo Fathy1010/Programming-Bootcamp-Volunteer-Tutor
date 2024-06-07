@@ -23,14 +23,14 @@ def listSumarry(num):
     # establish them to maintian good coding practices we are going
     # to name them a suitable name 
     
-    result=0  #This will store the final combined number
-    placingPoint=1   # This represents the current place value (units, tens, hundreds, etc.)
+    result=0                                      #This will store the final combined number
+    placingPoint=1                                # This represents the current place value (units, tens, hundreds, etc.)
     
     # Iterate through the list in reverse order
     for index in reversed(num):     
-      result += index * placingPoint    # Add the current digit multiplied by its place value
-      placingPoint *= 10     # Move to the next place value (units to tens, tens to hundreds, etc.)
-    return result      # Return the final combined number
+      result += index * placingPoint              # Add the current digit multiplied by its place value
+      placingPoint *= 10                          # Move to the next place value (units to tens, tens to hundreds, etc.)
+    return result                                 # Return the final combined number
 
 # Example usage to check if the code runs as expected
 myList = [8, 33, 5, 1]
